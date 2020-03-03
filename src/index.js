@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { MyProvider } from './MyProvider';
+import { AgeProvider } from './context/age';
 
 ReactDOM.render(
-  <MyProvider>
+  <AgeProvider>
     <App />
-  </MyProvider>,
+  </AgeProvider>,
   document.getElementById('root'),
 );
 

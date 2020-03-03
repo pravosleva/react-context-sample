@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { MyContext } from './MyProvider';
+import { AgeContext } from './context/age';
 
 
 const Family = props => (
@@ -13,7 +13,7 @@ class Person extends Component {
   render() {
     return (
       <div className='person'>
-        <MyContext.Consumer>
+        <AgeContext.Consumer>
           {context => (
             <>
               <p>Age: {context.state.age}</p>
@@ -23,7 +23,7 @@ class Person extends Component {
               </button>
             </>
           )}
-        </MyContext.Consumer>
+        </AgeContext.Consumer>
       </div>
     )
   }
